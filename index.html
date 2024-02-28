@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
   
   <title>Frontend Mentor | Order summary card</title>
 
@@ -16,22 +17,59 @@
 </head>
 <body>
 
-  Order Summary
+<div class="wrapper">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+  <header class="header"></header>
 
-  Annual Plan
-  $59.99/year
+  <main class="main">
 
-  Change
+    <section class="card">
+      <div class="container">
+        <div class="card__body">
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <img src="./assets/images/illustration-hero.svg" alt="hero" title="hero" height="100" width="100" loading="lazy" decoding="async" class="card__img">
+
+          <div class="card__content">
+            <h1 class="card__title">Order Summary</h1>
+
+            <div class="card__text">
+              You can now listen to millions of songs, audiobooks, and podcasts on any
+              device anywhere you like!
+            </div>
+
+            <div class="card__plan">
+              <img src="./assets/images/icon-music.svg" alt="music" height="50" width="50" loading="lazy" decoding="async">
+
+              <div class="card__plan-text">
+                <div class="card__plan-title">Annual Plan</div>
+                <div class="card__plan-price">$59.99/year</div>
+              </div>
+
+              <a href="#" class="card__plan-btn">Change</a>
+            </div>
+
+            <a href="#" class="card__btn-pay">Proceed to Payment</a>
+            <a href="#" class="card__btn-cancel">Cancel Order</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_body">
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by SAN
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
 </body>
 </html>
